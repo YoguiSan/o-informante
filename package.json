@@ -1,0 +1,45 @@
+{
+  "name": "o-informante",
+  "version": "0.0.1",
+  "description": "Bloqueador de paywalls",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack --mode development",
+    "start": "webpack serve --mode development",
+    "eslint": "eslint",
+    "commit": "git add . && git commit && git pull && git push",
+    "push": "npm run commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoguiSan/o-informante.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YoguiSan/o-informante/issues"
+  },
+  "homepage": "https://github.com/YoguiSan/o-informante#readme",
+  "dependencies": {
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-webpack-plugin": "^5.2.0",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.2.2",
+    "webpack": "^5.24.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
