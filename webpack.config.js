@@ -6,6 +6,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(less)$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'less-loader' },
+        ]
+      },{
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
