@@ -39,13 +39,14 @@ const ArticleContainer = ({ url }: ArticleContainerProps) => {
       {showInstructions && (
         <section id="instructions-container">
           <h3 className="info">Caso ocorra algum erro ou não seja possível abrir o site, siga as instruções abaixo para ocultar o paywall <b className="warning">(obs.: passos possíveis apenas em computador)</b>:</h3>
+          <h4 id="site-name">Instruções para: <b>{site.name}</b></h4>
           <ol className="steps">
             <li>Abra as ferramentas de desenvolvedor (F12 ou clique com o botão direito na página e selecione Inspecionar)</li>
             <li>Na aba <b>Elements</b>, procure os seguintes elementos (ou se não encontrar, procure algum elemento que possua um atributo <i>id</i> ou <i>class</i> com o texto correspondente ou similar) e em <b>Styles</b>, adicione ou substitua os valores existentes dentro de <i>element.style</i> pelos seguintes</li>:
             {
               Object.keys(site.instructions).map((key) => (
                 <ul id="instructions-list">
-                  <li><b className="instructions-list-site-name">{key}</b>: {site.instructions[key]}</li>
+                  <li><b className="instructions-list-element-name">{key}</b>: {site.instructions[key]}</li>
                 </ul>
               ))
             }

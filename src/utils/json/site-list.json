@@ -21,8 +21,11 @@
     }
   },
   "default": {
+    "name": "Site não reconhecido (instruções gerais)",
     "instructions": {
-      "body": "overflow: scroll !important"
+      "body": "overflow: scroll !important",
+      "Procure por elementos que contenham em Styles 'overflow: hidden !important' e troque por": "overflow: scroll !important",
+      "Procure por elementos que contenham paywall no atributo class ou que possuem em Styles 'display: block !important' e adicione/troque por": "display: none !important"
     }
   }
 }
