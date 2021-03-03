@@ -11,7 +11,8 @@
     "eslint": "eslint",
     "commit": "git add . && git commit && git pull && git push",
     "push": "npm run commit",
-    "deploy": "npm run push npm build && cp dist/index.html dist/200.html && surge dist --domain o-informante.surge.sh"
+    "surge": "npm build && cp dist/index.html dist/200.html && surge dist --domain o-informante.surge.sh",
+    "deploy": "npm run push && npm run surge"
   },
   "repository": {
     "type": "git",
