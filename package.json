@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "webpack --mode production",
     "dev": "webpack --mode development",
     "start": "webpack serve --mode development",
     "eslint": "eslint",
     "commit": "git add . && git commit && git pull && git push",
-    "push": "npm run commit"
+    "push": "npm run commit",
+    "deploy": "npm build && cp dist/index.html dist/200.html && surge dist --domain o-informante.surge.sh"
   },
   "repository": {
     "type": "git",
