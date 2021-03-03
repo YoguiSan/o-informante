@@ -1,6 +1,6 @@
 [
-  ".com",
-  ".com.br",
+  ".com.br[^.com]",
   ".net",
-  ".org"
+  ".org",
+  ".com"
 ]

@@ -11,6 +11,8 @@ export const identifySite = (url: string) => {
     url.search(SuffixRegex) - 3
   ).replace('/', '');
 
+  console.log(site)
+
   const { name, instructions } = SiteList[site] || SiteList.default;
 
   return {

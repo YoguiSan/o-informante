@@ -6,6 +6,20 @@
       "div class=\"paywall-cpt paywall-cpt-valor\"": "display: none !important"
     }
   },
+  "www1.folha.uol.com.": {
+    "name": "Folha de São Paulo",
+    "instructions": {
+      "div id=\"paywall-fill\"": "display: none !important",
+      "div id=\"paywall-screen\"": "display: none !important"
+    }
+  },
+  "oglobo.globo.com": {
+    "name": "O Globo",
+    "instructions": {
+      "div class=\"paywall-cpt paywall-cpt-oglobo\"": "display: none !important",
+      "body": "overflow: scroll !important; position: relative !important;"
+    }
+  },
   "default": {
     "instructions": {
       "body": "overflow: scroll !important"

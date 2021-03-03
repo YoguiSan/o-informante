@@ -45,7 +45,7 @@ const ArticleContainer = ({ url }: ArticleContainerProps) => {
             {
               Object.keys(site.instructions).map((key) => (
                 <ul id="instructions-list">
-                  <li><b className="instructions-list-site-name">{key}:</b> {site.instructions[key]}</li>
+                  <li><b className="instructions-list-site-name">{key}</b>: {site.instructions[key]}</li>
                 </ul>
               ))
             }
