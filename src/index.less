@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: monospace;
 }
 
 html {
@@ -9,6 +10,10 @@ html {
   body, body #root {
     height: 100%;
     width: 100%;
+
+    b.warning {
+      color: orange;
+    }
   }
 
   #principal {
@@ -31,19 +36,15 @@ html {
       right: 0;
       top: 0;
       width: 40%;
-
+      
       &.open {
+        margin-bottom: 1rem;
         position: relative;
       }
 
       > h1#titulo-principal {
-        font-family: monospace;
         font-size: 2rem;
         text-align: center;;
-      }
-
-      > h2 {
-        font-family: monospace;
       }
 
       #site-url-input {

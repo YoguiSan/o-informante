@@ -1,0 +1,14 @@
+{
+  "valor.globo.com": {
+    "name": "Valor Econômico",
+    "instructions": {
+      "body": "overflow: scroll !important; position: relative !important;",
+      "div class=\"paywall-cpt paywall-cpt-valor\"": "display: none !important"
+    }
+  },
+  "default": {
+    "instructions": {
+      "body": "overflow: scroll !important"
+    }
+  }
+}

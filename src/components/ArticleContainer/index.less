@@ -1,4 +1,37 @@
-#open-article-container, #open-article-container > #open-article-content {
-  height: 100%;
-  width: 100%;
+@article: #open-article-content;
+
+#open-article-container {
+  padding: 1rem;
+
+  &, & > @{article} {
+    height: 100%;
+    width: 100%;
+  }
+
+  @{article} html {
+    body {
+      overflow: scroll !important;
+    }
+  }
+
+  .error-message {
+    color: red;
+    font-weight: 700;
+  }
+
+  #instructions-container-toggler {
+    display: block;
+    float: none;
+    margin: 1rem auto;
+  }
+
+  #instructions-container {
+    background: black;
+    color: white;
+    padding: 1rem;
+    .instructions-list-site-name {
+      font-size: 1.3rem;
+    }
+  }
 }
+
